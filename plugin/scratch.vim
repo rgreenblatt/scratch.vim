@@ -33,6 +33,8 @@ command! -nargs=0 ScratchPreview call scratch#preview()
 
 nnoremap <silent> <plug>(scratch-insert-reuse) :call scratch#insert(0)<cr>
 nnoremap <silent> <plug>(scratch-insert-clear) :call scratch#insert(1)<cr>
+nnoremap <silent> <plug>(scratch-reuse) :call scratch#open(0)<cr>
+nnoremap <silent> <plug>(scratch-clear) :call scratch#open(1)<cr>
 xnoremap <silent> <plug>(scratch-selection-reuse) :<c-u>call scratch#selection(0)<cr>
 xnoremap <silent> <plug>(scratch-selection-clear) :<c-u>call scratch#selection(1)<cr>
 
